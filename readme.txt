@@ -25,6 +25,7 @@ npm install Express
 npm i --save-dev nodemon 
 npm i cors
 npm i csv-parse
+npm i morgan
 
 npm start
 nodemon server.js 
@@ -55,3 +56,7 @@ Whitelisting of servers for front end and back end to run at the same time which
 Controller & Routers are a One-to-One relationship
 
 Models can have an One-to-Many or Many-to-One relationship with Controllers
+
+# NPM package
+
+Can run scripts in the root folder by changing folder and initiating npm or by --prefix foldername
