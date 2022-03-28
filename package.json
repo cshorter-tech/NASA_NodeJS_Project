@@ -1,0 +1,23 @@
+{
+  "name": "07-nasa_project",
+  "version": "1.0.0",
+  "description": "// Intro to Architecture",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm run watch",
+    "client": "cd client && npm start",
+    "watch": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cshorter-tech/NASA_NodeJS_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cshorter-tech/NASA_NodeJS_Project/issues"
+  },
+  "homepage": "https://github.com/cshorter-tech/NASA_NodeJS_Project#readme"
+}
