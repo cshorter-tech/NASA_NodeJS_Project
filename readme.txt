@@ -64,3 +64,7 @@ Can run scripts in the root folder by changing folder and initiating npm or by -
 # Creating more functionality
 
 Collections & Models to add Launches, Upcoming and History 
+
+# Map Objects
+
+// Mappings (key-value pairs or functions) allow you to preserve the the order..

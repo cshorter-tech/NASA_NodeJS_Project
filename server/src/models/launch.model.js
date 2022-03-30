@@ -10,7 +10,9 @@
 
 // Store launch in an object
 
-const launches = [];
+// const launches = [];
+
+const launches = new Map();
 
 const launch = {
   flightNumber: 100,
@@ -21,4 +23,11 @@ const launch = {
   customer: ["NASA", "Elon Musk", "ZTM"],
   upcoming: true,
   success: true,
+};
+
+launches.set(launch.flightNumber, launch);
+launches.get(100); // For ex.. returns launch object
+
+module.exports = {
+  launches,
 };
