@@ -65,6 +65,6 @@ Can run scripts in the root folder by changing folder and initiating npm or by -
 
 Collections & Models to add Launches, Upcoming and History 
 
-# Map Objects
+# Javascript Map Object new Map()
 
-// Mappings (key-value pairs or functions) allow you to preserve the the order..
+// Mappings allow you to match key-value pairs or functions; but it preserves the order which is not guarenteed if managed by just a regular object {}..

@@ -1,18 +1,20 @@
+// Store launch in an object
+
+// const launches = [];
+
+// Javascript Map Object -
+
+const launches = new Map();
+
 // No / UID
 // Mission name
 // Rocket type
 // Launch date
 // Destination exoplanet
 // Customers
-
+// Booleans & Other Values
 // Historical Missions - Success
 // Mission Status - Upcoming (T), History (F)
-
-// Store launch in an object
-
-// const launches = [];
-
-const launches = new Map();
 
 const launch = {
   flightNumber: 100,
@@ -25,8 +27,13 @@ const launch = {
   success: true,
 };
 
+// Launch.Set(Key, Value)
+
 launches.set(launch.flightNumber, launch);
+
 launches.get(100); // For ex.. returns launch object
+
+// Export launches Map()
 
 module.exports = {
   launches,
