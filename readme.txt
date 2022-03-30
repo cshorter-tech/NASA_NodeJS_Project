@@ -60,3 +60,7 @@ Models can have an One-to-Many or Many-to-One relationship with Controllers
 # NPM package
 
 Can run scripts in the root folder by changing folder and initiating npm or by --prefix foldername
+
+# Creating more functionality
+
+Collections & Models to add Launches, Upcoming and History 
