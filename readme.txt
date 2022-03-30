@@ -61,10 +61,20 @@ Models can have an One-to-Many or Many-to-One relationship with Controllers
 
 Can run scripts in the root folder by changing folder and initiating npm or by --prefix foldername
 
-# Creating more functionality
+## Part II - Creating more functionality
 
 Collections & Models to add Launches, Upcoming and History 
+
+# Create Model
 
 # Javascript Map Object new Map()
 
 // Mappings allow you to match key-value pairs or functions; but it preserves the order which is not guarenteed if managed by just a regular object {}..
+
+# Adding Router & Controller
+
+Apps(Router Constant + App Use) -> Launches Folder -> Launches.Router (launchesRouter) -> Launches.Controller (getAllLaunches)
+
+// Or vice versa
+
+// Going into apps folder will need to require the router.
