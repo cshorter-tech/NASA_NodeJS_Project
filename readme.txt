@@ -26,6 +26,7 @@ npm i --save-dev nodemon
 npm i cors
 npm i csv-parse
 npm i morgan
+npm run build
 
 npm start
 nodemon server.js 
