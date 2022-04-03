@@ -79,3 +79,16 @@ Apps(Router Constant + App Use) -> Launches Folder -> Launches.Router (launchesR
 // Or vice versa
 
 // Going into apps folder will need to require the router.
+
+# Seperation of Concerns
+
+Determining what should go into a model vs. Controller
+
+Ex 1 - Model only works with the data that is stored; Controller only needs to work with the data model (not convert the data)
+
+Benefit is solid strucutre of code which means less moving around of functions.. Investing in if you plan to continue to work on the project.
+
+Layered Architecture - User Interface, Business Logic, Data Access (also refered to as a seperation of concern)
+
+Module is responsible for one thing; and does well.. the more concerns the more complex to keep track of various changes and relationships between different components. Seperating concerns makes it easier to understand.
+

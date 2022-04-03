@@ -33,8 +33,12 @@ launches.set(launch.flightNumber, launch);
 
 launches.get(100); // For ex.. returns launch object
 
-// Export launches Map()
+function getAllLaunches() {
+  return Array.from(launches.values());
+}
+
+// Export launches Map() <-- No Longer
 
 module.exports = {
-  launches,
+  getAllLaunches,
 };
