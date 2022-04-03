@@ -6,6 +6,8 @@
 
 const launches = new Map();
 
+let latestFlightNumber = 100;
+
 // No / UID
 // Mission name
 // Rocket type
@@ -17,14 +19,14 @@ const launches = new Map();
 // Mission Status - Upcoming (T), History (F)
 
 const launch = {
-  flightNumber: 100,
-  mission: "Kepler Exploration X",
-  rocket: "Explorer IS1",
-  launchDate: new Date("December 27, 2030"),
-  destination: "Kepler-442 b",
-  customer: ["NASA", "Elon Musk", "ZTM"],
-  upcoming: true,
-  success: true,
+  flightNumber: 100, // caculate
+  mission: "Kepler Exploration X", // user input
+  rocket: "Explorer IS1", // user input
+  launchDate: new Date("December 27, 2030"), // user input
+  destination: "Kepler-442 b", // user input
+  customer: ["NASA", "Elon Musk", "ZTM"], // standard input
+  upcoming: true, // standard input until date past
+  success: true, // standard input until date past where something goes wrong
 };
 
 // Launch.Set(Key, Value)
@@ -37,8 +39,25 @@ function getAllLaunches() {
   return Array.from(launches.values());
 }
 
+// Create function to addNewLaunch that accepts 'launch' as the argugment which is added to the map / collection
+
+function addNewLaunch(launch) {
+  // launches.set(launch.flightNumber, launch);
+  latestFlightNumber++;
+  launches.set(
+    latestFlightNumber,
+    Object.assign(launch, {
+      flightNumber: latestFlightNumber,
+      customer: ["NASA", "Elon Musk", "ZTM"],
+      upcoming: true,
+      success: true,
+    })
+  );
+}
+
 // Export launches Map() <-- No Longer
 
 module.exports = {
   getAllLaunches,
+  addNewLaunch,
 };

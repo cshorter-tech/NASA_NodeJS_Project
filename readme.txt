@@ -74,7 +74,7 @@ Collections & Models to add Launches, Upcoming and History
 
 # Adding Router & Controller
 
-Apps(Router Constant + App Use) -> Launches Folder -> Launches.Router (launchesRouter) -> Launches.Controller (getAllLaunches)
+Front End Clietn (Router JS) as applicable -> Apps(Router Constant + App Use) -> Launches Folder -> Launches.Router (launchesRouter) -> Launches.Controller (getAllLaunches) --> Model as applicable 
 
 // Or vice versa
 
@@ -91,4 +91,19 @@ Benefit is solid strucutre of code which means less moving around of functions..
 Layered Architecture - User Interface, Business Logic, Data Access (also refered to as a seperation of concern)
 
 Module is responsible for one thing; and does well.. the more concerns the more complex to keep track of various changes and relationships between different components. Seperating concerns makes it easier to understand.
+
+# Adding Functionality to addNewLaunch
+
+Base functionality by using the model to take data and design functions around that data. 
+
+Step 1: Build a function that allows router to set launches using the mapping function within the model..
+Step 2: Set up postman collection to make request via GET
+Step 3: Update Controller w/ corresponding contoller functino to handle new request and Router to accept 'addNewLaunch' under /launches route (since everything is a launch within launchRouter)
+
+# Validations Modules e.g, Packages & APIs
+
+Parsing Dates
+Error Handling
+Validating - RegEx
+Other Contitionals - Required Field, Missing Inputs & Rule Logic
 
