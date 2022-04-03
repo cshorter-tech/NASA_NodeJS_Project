@@ -8,7 +8,6 @@ function httpGetAllLaunches(req, res) {
 
 function httpAddNewLaunch(req, res) {
   const launch = req.body;
-
   if (
     !launch.mission ||
     !launch.rocket ||
@@ -25,6 +24,11 @@ function httpAddNewLaunch(req, res) {
       error: "Invalid launch date",
     });
   }
+  // if (launch.launchDate.toString() === "Invalid Date") {
+  //   return res.status(400).json({
+  //     error: "Invalid launch date via toString",
+  //   });
+  // }
   addNewLaunch(launch);
   return res.status(201).json(launch); //Gives response and data..
 }
