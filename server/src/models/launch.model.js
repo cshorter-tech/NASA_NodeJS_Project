@@ -23,7 +23,7 @@ const launch = {
   mission: "Kepler Exploration X", // user input
   rocket: "Explorer IS1", // user input
   launchDate: new Date("December 27, 2030"), // user input
-  destination: "Kepler-442 b", // user input
+  target: "Kepler-442 b", // user input
   customer: ["NASA", "Elon Musk", "ZTM"], // standard input
   upcoming: true, // standard input until date past
   success: true, // standard input until date past where something goes wrong

@@ -107,3 +107,8 @@ Error Handling
 Validating - RegEx
 Other Contitionals - Required Field, Missing Inputs & Rule Logic
 
+# Connecting POST/Launches to Front End
+
+Submit given launch data to launch system. 
+GET - Default, POST - Option Object + Pass In Data
+
