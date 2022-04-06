@@ -92,7 +92,7 @@ Layered Architecture - User Interface, Business Logic, Data Access (also refered
 
 Module is responsible for one thing; and does well.. the more concerns the more complex to keep track of various changes and relationships between different components. Seperating concerns makes it easier to understand.
 
-# Adding Functionality to addNewLaunch
+# Adding Functionality to addNewLaunch (Bottom Up Approach)
 
 Base functionality by using the model to take data and design functions around that data. 
 
@@ -112,3 +112,8 @@ Other Contitionals - Required Field, Missing Inputs & Rule Logic
 Submit given launch data to launch system. 
 GET - Default, POST - Option Object + Pass In Data
 
+# Adding Functionality to deleteLaunch (Top Down Approach)
+
+
+
+Front End Client (Upcoming.js - abortLaunch onClick -> useLaunches -> Request.js)-> Apps(Router Constant + App Use) -> Launches Folder -> Launches.Router (launchesRouter) -> Launches.Controller (getAllLaunches) --> Model as applicable 

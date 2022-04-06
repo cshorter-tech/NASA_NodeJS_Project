@@ -33,7 +33,11 @@ const launch = {
 
 launches.set(launch.flightNumber, launch);
 
-launches.get(100); // For ex.. returns launch object
+// launches.get(100); // For ex.. returns launch object
+
+function existLaunchWithID(launchId) {
+  return launches.has(launchId);
+}
 
 function getAllLaunches() {
   return Array.from(launches.values());
@@ -55,9 +59,18 @@ function addNewLaunch(launch) {
   );
 }
 
+function abortLaunchById(launchId) {
+  const abortedLaunch = launches.get(launchId);
+  abortedLaunch.upcoming = false;
+  abortedLaunch.success = false;
+  return abortedLaunch;
+}
+
 // Export launches Map() <-- No Longer
 
 module.exports = {
+  existLaunchWithID,
   getAllLaunches,
   addNewLaunch,
+  abortLaunchById,
 };
